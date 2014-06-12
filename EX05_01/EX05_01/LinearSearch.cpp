@@ -9,10 +9,10 @@ T linearSearch(T list[], T key, int arraySize)
 	for (int i = 0; i < arraySize; i++)
 	{
 		if (key == list[i])
-			return i;
+			cout << i << "";
 	}
 
-	return 0;
+	return key;
 }
 
 int main()
@@ -35,8 +35,8 @@ int main()
 	{
 		"Caramel", "Chocolate", "Vanilla", "Coconut", "Butterscotch", "Strawberry", "Bannana", "Cherry"
 	};
-	cout << "linearSearch(stringArray, "", 8) is " << linearSearch(stringArray, static_cast<string>("Butterscotch"), 8) << endl;
-	cout << "linearSearch(stringArray, "", 8) is " << linearSearch(stringArray, static_cast<string>("Chocolate"), 8) << endl;
+	cout << "linearSearch(stringArray, Butterscotch, 8) is " << linearSearch(stringArray, static_cast<string>("Butterscotch"), 8) << endl;
+	cout << "linearSearch(stringArray, Chocolate, 8) is " << linearSearch(stringArray, static_cast<string>("Chocolate"), 8) << endl;
 	
 	return 0;
 
